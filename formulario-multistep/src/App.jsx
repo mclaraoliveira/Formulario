@@ -1,12 +1,16 @@
 import './App.css';
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
 import { FiSend } from 'react-icons/fi';
+import Documento from './components/Documento';
+import Confirmacao from './components/Confirmacao';
+import Info1 from './components/Info1';
 import UserForm from "./components/UserForm";
 import ReviewForm from "./components/ReviewForm";
 import Thanks from "./components/Thanks";
 import { useForm } from "./hooks/useForm";
 import Steps from './components/Steps';
 import { useState } from "react";
+
 
 const formTemplate = {
   name: "",
@@ -27,6 +31,9 @@ function App() {
   
 
   const formComponents = [
+    <Documento data={data} updateFieldHandler={updateFieldHandler} />,
+    <Confirmacao data={data} updateFieldHandler={updateFieldHandler} />,
+    <Info1 data={data} updateFieldHandler={updateFieldHandler} />,
     <UserForm data={data} updateFieldHandler={updateFieldHandler} />,
     <ReviewForm data={data} updateFieldHandler={updateFieldHandler} />,
     <Thanks data={data} />
@@ -37,8 +44,8 @@ function App() {
   return (
       <div className="app">
         <div className="header">
-          <h2>Deixe sua avaliação</h2>
-          <p>Ficamos felizes com a sua compra, utilize o formulário abaixo para avaliar o produto</p>
+          <h2>Questionário para Empresas</h2>
+          <p>Insira as informações requeridas abaixo para se cadastrar para uso da SoftexLabs</p>
         </div>
         <div className="form-container">
           <Steps currentStep={currentStep}/>
