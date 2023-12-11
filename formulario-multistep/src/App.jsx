@@ -4,6 +4,7 @@ import { FiSend } from 'react-icons/fi';
 import Documento from './components/Documento';
 import Confirmacao from './components/Confirmacao';
 import Info1 from './components/Info1';
+import Iniciativa from './components/Iniciativa';
 import UserForm from "./components/UserForm";
 import ReviewForm from "./components/ReviewForm";
 import Thanks from "./components/Thanks";
@@ -34,6 +35,7 @@ function App() {
     <Documento data={data} updateFieldHandler={updateFieldHandler} />,
     <Confirmacao data={data} updateFieldHandler={updateFieldHandler} />,
     <Info1 data={data} updateFieldHandler={updateFieldHandler} />,
+    <Iniciativa data={data} updateFieldHandler={updateFieldHandler} />,
     <UserForm data={data} updateFieldHandler={updateFieldHandler} />,
     <ReviewForm data={data} updateFieldHandler={updateFieldHandler} />,
     <Thanks data={data} />
