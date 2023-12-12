@@ -42,7 +42,7 @@ const Sala = ({ data, updateFieldHandler }) => {
             </div>
 
             <div className="form-control">
-                <label htmlFor="finalidade">Qual a finalidade do uso da sala ou do laboratório da softexlabs?</label>
+                <label htmlFor="finalidade">Qual a finalidade do uso da sala ou do laboratório da SoftexLabs?</label>
                 <textarea
                     id="finalidade"
                     name="finalidade"

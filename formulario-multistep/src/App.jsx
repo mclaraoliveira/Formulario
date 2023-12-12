@@ -6,6 +6,7 @@ import Confirmacao from './components/Confirmacao';
 import Info1 from './components/Info1';
 import Iniciativa from './components/Iniciativa';
 import Sala from './components/Sala';
+import Veracidade from './components/Veracidade';
 import Thanks from "./components/Thanks";
 import { useForm } from "./hooks/useForm";
 import Steps from './components/Steps';
@@ -36,6 +37,7 @@ function App() {
     <Info1 data={data} updateFieldHandler={updateFieldHandler} />,
     <Iniciativa data={data} updateFieldHandler={updateFieldHandler} />,
     <Sala data={data} updateFieldHandler={updateFieldHandler} />,
+    <Veracidade data={data} updateFieldHandler={updateFieldHandler} />,
     <Thanks data={data} />
   ];
   

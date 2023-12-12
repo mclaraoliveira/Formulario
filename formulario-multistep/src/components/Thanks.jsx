@@ -13,7 +13,7 @@ const emojiData = {
 const Thanks = ({ data }) => {
     return (
         <div className="thanks-container">
-            <h2>Falta pouco...</h2>
+            <h2>Obrigado pelo cadastro para uso da SoftexLabs, retornaremos em breve</h2>
             <p>A sua opinião é muito importante, em breve você receberá um cupom de 10% de desconto para a sua próxima compra.</p>
             <p>Para concluir sua avaliação, clique no botão de Enviar abaixo.</p>
             <h3>Aqui está o resumo da sua avaliação: {data.name}</h3>
