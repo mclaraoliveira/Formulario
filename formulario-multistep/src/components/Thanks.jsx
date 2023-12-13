@@ -1,30 +1,36 @@
 import React from "react";
 import "./Thanks.css";
-import { BsFillEmojiHeartEyesFill, BsFillEmojiSmileFill, BsFillEmojiNeutralFill, BsFillEmojiFrownFill } from "react-icons/bs";
 
-const emojiData = {
-    unsatisfied: <BsFillEmojiFrownFill />,
-    neutral: <BsFillEmojiNeutralFill />,
-    satisfied: <BsFillEmojiSmileFill />,
-
-
-}
-
-const Thanks = ({ data }) => {
+const Thanks = ({ data, updateFieldHandler }) => {
     return (
         <div className="thanks-container">
             <h2>Obrigado pelo cadastro para uso da SoftexLabs, retornaremos em breve</h2>
-            <p>A sua opinião é muito importante, em breve você receberá um cupom de 10% de desconto para a sua próxima compra.</p>
-            <p>Para concluir sua avaliação, clique no botão de Enviar abaixo.</p>
-            <h3>Aqui está o resumo da sua avaliação: {data.name}</h3>
-            <p className="review-data">
-                <span>Satisfação com o produto:</span>
-                {emojiData[data.review]}
-            </p>
-            <p className="review-data">
-                <span>Comentário:</span>
-                {data.comment}
-            </p>
+
+            <div className="form-control">
+                <label>Deseja receber nosso newsletter?</label>
+                <div>
+                    <label>
+                        <input
+                            type="radio"
+                            name="newsletter"
+                            value="sim"
+                            checked={data.newsletter === "sim"}
+                            onChange={(e) => updateFieldHandler("newsletter", e.target.value)}
+                        />
+                        Sim
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="newsletter"
+                            value="nao"
+                            checked={data.newsletter === "nao"}
+                            onChange={(e) => updateFieldHandler("newsletter", e.target.value)}
+                        />
+                        Não
+                    </label>
+                </div>
+            </div>
         </div>
     );
 };
