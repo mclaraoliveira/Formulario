@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Thanks.css";
 
 const Thanks = ({ data, updateFieldHandler }) => {
+    const [querReceberNewsletter, setQuerReceberNewsletter] = useState(false);
+
+    const handleNewsletterChange = (value) => {
+        setQuerReceberNewsletter(value);
+        updateFieldHandler("newsletter", value);
+    };
+
     return (
         <div className="thanks-container">
             <h2>Obrigado pelo cadastro para uso da SoftexLabs, retornaremos em breve</h2>
@@ -14,8 +21,8 @@ const Thanks = ({ data, updateFieldHandler }) => {
                             type="radio"
                             name="newsletter"
                             value="sim"
-                            checked={data.newsletter === "sim"}
-                            onChange={(e) => updateFieldHandler("newsletter", e.target.value)}
+                            checked={querReceberNewsletter}
+                            onChange={() => handleNewsletterChange(true)}
                         />
                         Sim
                     </label>
@@ -24,13 +31,24 @@ const Thanks = ({ data, updateFieldHandler }) => {
                             type="radio"
                             name="newsletter"
                             value="nao"
-                            checked={data.newsletter === "nao"}
-                            onChange={(e) => updateFieldHandler("newsletter", e.target.value)}
+                            checked={!querReceberNewsletter}
+                            onChange={() => handleNewsletterChange(false)}
                         />
                         Não
                     </label>
                 </div>
             </div>
+
+            {querReceberNewsletter && (
+                <div className="form-control">
+                    <label>Digite seu e-mail:</label>
+                    <input
+                        type="text"
+                        value={data.emailNewsletter || ""}
+                        onChange={(e) => updateFieldHandler("emailNewsletter", e.target.value)}
+                    />
+                </div>
+            )}
         </div>
     );
 };
