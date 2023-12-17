@@ -19,7 +19,7 @@
 
 .step {
     text-align: center;
-    background-color: #fff;
+    background-color: #181818;
     z-index: 1;
     width: 120px;
     padding: 0.5rem;
@@ -36,5 +36,5 @@
 }
 
 .active > svg {
-    fill: #7076f4;
+    fill: #ce5e13;
 }
