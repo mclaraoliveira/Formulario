@@ -1,0 +1,13 @@
+.form-control {
+    margin-bottom: 20px;
+  }
+   
+  .form-control a {
+    color: #ff6b00;
+    text-decoration: none;
+  }
+
+  .form-control label {
+    margin-right: 45px; 
+  }
+  

@@ -15,7 +15,7 @@ const Info1 = ({ data, updateFieldHandler }) => {
     return (
         <div>
             <div className="form-control">
-                <label htmlFor="name">Nome da Empresa:</label>
+                <label htmlFor="name">Nome da empresa:</label>
                 <input
                     type="text"
                     name="text"
@@ -28,7 +28,7 @@ const Info1 = ({ data, updateFieldHandler }) => {
             </div>
 
             <div className="form-control">
-                <label htmlFor="PerguntaFuncionarios">Quantos Funcionários?</label>
+                <label htmlFor="PerguntaFuncionarios">Quantos funcionários?</label>
                 <select
                     id="PerguntaFuncionarios"
                     value={numeroDeFuncionarios}
@@ -50,7 +50,7 @@ const Info1 = ({ data, updateFieldHandler }) => {
             </div>
 
             <div className="form-control">
-                <label htmlFor="funcaoNaEmpresa">Qual a Sua Função Na Empresa?</label>
+                <label htmlFor="funcaoNaEmpresa">Qual a sua função na empresa?</label>
                 <select
                     id="funcaoNaEmpresa"
                     value={funcaoNaEmpresa}

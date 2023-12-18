@@ -3,7 +3,6 @@ import "./Steps.css";
 import { HiIdentification } from "react-icons/hi2";
 import { IoBusiness } from "react-icons/io5";
 import { FaBusinessTime } from "react-icons/fa";
-import { AiOutlineUser, AiOutlineStar } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
 
 const Steps = ({ currentStep }) => {

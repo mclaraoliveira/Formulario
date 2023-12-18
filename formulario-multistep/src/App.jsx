@@ -46,7 +46,7 @@ function App() {
   return (
       <div className="app">
         <div className="header">
-          <h2>Questionário para Empresas</h2>
+          <h2>QUESTIONÁRIO PARA EMPRESAS</h2>
           <p>Insira as informações requeridas abaixo para se cadastrar para uso da SoftexLabs</p>
         </div>
         <div className="form-container">
