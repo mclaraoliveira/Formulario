@@ -13,6 +13,7 @@ const Finalidade = ({ data, updateFieldHandler }) => {
           id="finalidade"
           name="finalidade"
           placeholder="Digite aqui"
+          required
           rows="6"
           value={finalidade}
           onChange={(e) => setFinalidade(e.target.value)}

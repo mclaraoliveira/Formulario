@@ -20,7 +20,7 @@ body {
     background-color: #F06C00;
     padding: 1.5rem;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
-    border-radius: 20px;
+    border-radius: 10px;
   }
   
   .form-container form {

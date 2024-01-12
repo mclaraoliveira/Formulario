@@ -15,6 +15,12 @@
     text-align: center;
     margin-top: 10px; /* Adicione margem superior conforme necessário */
   }
+
+  .container img {
+    align-items: center;
+    width: 100px;
+    height: auto;
+  }
   
 
   
