@@ -1,4 +1,5 @@
 import React from "react";
+import './Documento.css'
 
 const Documento = ({ data, updateFieldHandler }) => {
     return (

@@ -40,18 +40,6 @@ const Sala = ({ data, updateFieldHandler }) => {
                     onChange={(e) => setDiaHorario(e.target.value)}
                 />
             </div>
-
-            <div className="form-control">
-                <label htmlFor="finalidade">Qual a finalidade do uso da sala ou do laboratório da SoftexLabs?</label>
-                <textarea
-                    id="finalidade"
-                    name="finalidade"
-                    placeholder="Digite aqui"
-                    rows="6"
-                    value={finalidade}
-                    onChange={(e) => setFinalidade(e.target.value)}
-                />
-            </div>
         </div>
     );
 };
