@@ -1,6 +1,6 @@
 import React from 'react'
 import './Thanks.css'
-import softexLabs from '../imagens/softexlabs.png'
+import softexLabs from '../imagens/logo.png'
 
 const Thanks = () => {
     return (
